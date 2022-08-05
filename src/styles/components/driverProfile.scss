@@ -1,0 +1,47 @@
+.profile-wrapper  {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: rgba(24, 24, 24, 0.87);
+  font-family: 'Exo', sans-serif;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+
+  .profile-container {
+    margin-left: 10px;
+  }
+  h1 {
+    margin-bottom: 16px;
+    font-size: 2.7rem;
+    font-weight: 600;
+  }
+}
+
+.profile-details {
+  background-color: rgb(67, 67, 67);
+  border-radius: 5px;
+  padding: 15px;
+  h3 {
+    font-size: calc(1.2rem + .2vw);
+    margin-top: 0.5rem;
+  }
+  .row:not(:last-of-type){
+    border-bottom: 1px solid gray;
+    .col{
+      border-left: 1px solid gray;
+    }
+  }
+
+}
+
+.profileImage {
+  img {
+    background-color: rgb(95, 30, 30);
+    border-radius: 10px;
+    height: 100%;
+    max-width: 100%;
+  }
+} 
+

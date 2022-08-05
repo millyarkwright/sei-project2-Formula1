@@ -1,0 +1,54 @@
+.schedule-wrapper{
+  font-family: 'Exo', sans-serif;  
+  background-image: url('../../images/background3.jpg');
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px;
+  h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 60px;
+  }
+  .header-wrapper p {
+    font-size: 30px;
+  }
+  a{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .class-header span{
+    float: left;
+  }
+  .card {
+    padding-bottom: calc(var(--bs-gutter-x) * 0.5);
+    border: none;
+    background-color: transparent;
+  }
+  .card-header{
+    background-color: rgb(54, 54, 54);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    p {
+      margin: 0;
+    }
+  }
+  .card-img-bottom {
+    background-color: rgba(208, 208, 208, 0.915);
+  }
+  .unfinished{
+    background-color: rgb(139, 22, 22);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    p {
+      margin: 0;
+    }
+  }
+  .card-body {
+    background-color: rgba(171, 171, 171, 0.9);
+  }
+
+}

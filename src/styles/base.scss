@@ -1,0 +1,18 @@
+* {
+  font-family: 'Exo', sans-serif;
+}
+
+.site-wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url('../images/background.jpg');
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  main {
+    flex-grow: 1;
+  }
+}
+
