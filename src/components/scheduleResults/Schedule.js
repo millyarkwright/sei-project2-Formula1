@@ -21,7 +21,7 @@ const Schedule = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const { data } = await axios.get('http://ergast.com/api/f1/current.json')
+        const { data } = await axios.get('https://ergast.com/api/f1/current.json')
         setRaces(data.MRData.RaceTable.Races)
         setCurrentSeason(data.MRData.RaceTable.Races[0].season)
       } catch (error) {

@@ -23,7 +23,7 @@ const DriverSingle = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const { data } = await axios.get('http://ergast.com/api/f1/2022/driverStandings.json')
+        const { data } = await axios.get('https://ergast.com/api/f1/2022/driverStandings.json')
         setStandings(data.MRData.StandingsTable.StandingsLists[0].DriverStandings)
       } catch (err) {
         setErrors(err)
@@ -51,8 +51,8 @@ const DriverSingle = () => {
 
   return (
 
-    <Container className="profile-wrapper py-4 bg-gradient">
-      <Row className="profile-container">
+    <Container className="profile-wrapper py-4">
+      <Row className="profile-container p-3 py-5 mx-2 bg-gradient justify-content-center">
         <h1 className="text-center fw-bold">Driver Profile</h1>
         {standings.length > 0 ?
           standings.map(item => {
@@ -61,10 +61,10 @@ const DriverSingle = () => {
             if (Driver.familyName === familyName && Driver.givenName === givenName) {
               return (
                 <Row key={Driver.driverId}>
-                  <Col className="profileImage text-center text-lg-start" xs="12" lg="5" xl="4"  >
+                  <Col className="profileImage text-center text-lg-start col-5" xs="12" lg="4" xl="4"  >
                     <img className="bg-gradient" src={images} alt='Driver Profile' />
                   </Col>
-                  <Col className="profile-details mt-3 mt-lg-0 bg-gradient" xs="12" lg="7" xl="8" pl-lg="0">
+                  <Col className="profile-details mt-3 mt-lg-0 bg-gradient" xs="12" lg="8" xl="8" pl-lg="0">
                     <Row className='profile-table'>
                       <Col xs="6">
                         <h3 className='fw-semibold'>Name</h3>

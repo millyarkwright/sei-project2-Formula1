@@ -21,7 +21,7 @@ const ResultSingle = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const { data } = await axios.get(`http://ergast.com/api/f1/${seasonNo}/${roundNo}/results.json`)
+        const { data } = await axios.get(`https://ergast.com/api/f1/${seasonNo}/${roundNo}/results.json`)
         console.log(data)
         setResult(data.MRData.RaceTable.Races[0].Results)
         setRaceName(data.MRData.RaceTable.Races[0].raceName)
@@ -41,7 +41,7 @@ const ResultSingle = () => {
           <p>Season {seasonNo}</p>
         </div>
         {result.length > 0 ?
-          <div className="table-wrapper bg-gradient">
+          <div className="table-wrapper">
             <Row className="">
               <Row className="table-headers bg-gradient">
                 <Col className='col-1'>

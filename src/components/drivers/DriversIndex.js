@@ -19,7 +19,7 @@ const DriversIndex = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const { data } = await axios.get('http://ergast.com/api/f1/2022/driverStandings.json')
+        const { data } = await axios.get('https://ergast.com/api/f1/2022/driverStandings.json')
         setDrivers(data.MRData.StandingsTable.StandingsLists[0].DriverStandings)
         setSeasons(data.MRData.StandingsTable.season)
       } catch (error) {
@@ -50,8 +50,8 @@ const DriversIndex = () => {
                   <Link to={`/drivers/${familyName}/${givenName}`}>
                     <Card.Img className='bg-gradient' variant='top' src={require(`../../images/profiles/${driverId}.png`)} ></Card.Img>
                     <Card.Body className='bg-gradient'>
-                      <Card.Title> {givenName} {familyName}</Card.Title>
-                      <Card.Subtitle>{constructorName}</Card.Subtitle>
+                      <Card.Title className=''> {givenName} {familyName}</Card.Title>
+                      <Card.Subtitle className='fs-7 mt-1'>{constructorName}</Card.Subtitle>
                     </Card.Body>
                   </Link>
                 </Col>

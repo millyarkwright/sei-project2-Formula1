@@ -8,7 +8,7 @@
   align-items: center;
   font-family: 'Exo', sans-serif;
   .next-race-container {
-    background-color: rgba(143, 34, 29, 0.9);
+    background-color: rgba(174, 45, 38, 0.9);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -23,7 +23,7 @@
 
   h1 {
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2.8rem;
     margin-bottom: 0;
   }
 
@@ -38,13 +38,13 @@
 
     .table-wrapper{
       border-radius: 10px;
-      background-color: rgba(0, 0, 0, 0.838);
+      background-color: rgba(19, 19, 19, 0.838);
       padding: 10px;
       margin: 5px;
 
       .table-headers {
         margin-top: 10px; 
-        background-color: rgb(144, 40, 35);
+        background-color: rgb(169, 51, 44);
         padding: 0px;
         p {
           line-height: 50px;

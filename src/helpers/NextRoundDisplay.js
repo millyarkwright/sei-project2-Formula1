@@ -12,7 +12,6 @@ export const getRace = (race) => {
   raceObj = race
 }
 
-// ! DISPLAY LOGIN TEXT
 export const nextRaceDisplay = () => {
   nextRace = raceObj[roundIndex]
   console.log('nextRace -->', nextRace.time.split('').slice(0, 5))

@@ -28,7 +28,7 @@ const Home = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const { data } = await axios.get('http://ergast.com/api/f1/2022/driverStandings.json')
+        const { data } = await axios.get('https://ergast.com/api/f1/2022/driverStandings.json')
         setStandings(data.MRData.StandingsTable.StandingsLists[0].DriverStandings)
         setCurrentRace(data.MRData.StandingsTable.StandingsLists[0])
         getRound(`${data.MRData.StandingsTable.StandingsLists[0].round}`)
@@ -43,7 +43,7 @@ const Home = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const { data } = await axios.get('http://ergast.com/api/f1/current.json')
+        const { data } = await axios.get('https://ergast.com/api/f1/current.json')
         setRaces(data.MRData.RaceTable.Races)
         getRace(data.MRData.RaceTable.Races)
       } catch (error) {
@@ -57,7 +57,7 @@ const Home = () => {
   // ! JSX -----------------
   return (
     <main className='home-container'>
-      <div className="next-race-container text-center bg-gradient">
+      <div className="next-race-container text-center ">
         {races.length > 0 && nextRaceDisplay()}
       </div>
       <div className="standings-container mb-3">
@@ -65,7 +65,7 @@ const Home = () => {
           <h1>Current Standings</h1>
           <p>Season {currentRace.season} Round <span>{currentRace.round}</span> / <span>{races.length}</span></p>
         </div>
-        <div className="table-wrapper bg-gradient">
+        <div className="table-wrapper">
           {standings.length > 0 ?
             <Row>
               <div>
