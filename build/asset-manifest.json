@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.37746a56.css",
-    "main.js": "/static/js/main.17263f7d.js",
+    "main.js": "/static/js/main.ec033c6c.js",
     "static/media/background3.jpg": "/static/media/background3.05ba015f813205bb0a05.jpg",
     "static/media/background.jpg": "/static/media/background.6c175a8b579dc0fcf061.jpg",
     "static/media/Australian-Grand-Prix.png": "/static/media/Australian-Grand-Prix.782d13e0c97ca8c478ad.png",
@@ -31,6 +31,7 @@
     "static/media/Turkey-Grand-Prix.png": "/static/media/Turkey-Grand-Prix.35d2931a903f0f820d0e.png",
     "static/media/Vietnam-Grand-Prix.png": "/static/media/Vietnam-Grand-Prix.429d15ae1c12a5c23954.png",
     "static/media/Eifel-Grand-Prix.png": "/static/media/Eifel-Grand-Prix.f54bc8a4cf4a8629225d.png",
+    "static/media/de_vries.png": "/static/media/de_vries.9d6b58d36fa6adf56579.png",
     "static/media/German-Grand-Prix.png": "/static/media/German-Grand-Prix.f619ac7f47cdd14ce1ff.png",
     "static/media/Toscana-Grand-Prix.png": "/static/media/Toscana-Grand-Prix.c0030982523cb041d041.png",
     "static/media/Miami-Grand-Prix.png": "/static/media/Miami-Grand-Prix.e034c10fb38f06b4000f.png",
@@ -58,10 +59,10 @@
     "static/media/Qatar-Grand-Prix.png": "/static/media/Qatar-Grand-Prix.d70186bad988809a6197.png",
     "index.html": "/index.html",
     "main.37746a56.css.map": "/static/css/main.37746a56.css.map",
-    "main.17263f7d.js.map": "/static/js/main.17263f7d.js.map"
+    "main.ec033c6c.js.map": "/static/js/main.ec033c6c.js.map"
   },
   "entrypoints": [
     "static/css/main.37746a56.css",
-    "static/js/main.17263f7d.js"
+    "static/js/main.ec033c6c.js"
   ]
 }

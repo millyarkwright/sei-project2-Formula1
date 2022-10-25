@@ -22,7 +22,7 @@ The idea of our App is to provide Formula 1 race schedule and results, standings
 
 ***
 
-#### You will find the deployed app here: [formula1-seasonresults.netlify.app](formula1-seasonresults.netlify.app)
+#### You will find the deployed app here: [https://sei-project2-formula1.netlify.app](https://sei-project2-formula1.netlify.app)
 
 ***
 
