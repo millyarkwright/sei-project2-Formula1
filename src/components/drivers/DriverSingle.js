@@ -24,6 +24,7 @@ const DriverSingle = () => {
     const getData = async () => {
       try {
         const { data } = await axios.get('https://ergast.com/api/f1/2022/driverStandings.json')
+        console.log('profile data', data.MRData.StandingsTable.StandingsLists[0].DriverStandings)
         setStandings(data.MRData.StandingsTable.StandingsLists[0].DriverStandings)
       } catch (err) {
         setErrors(err)
@@ -41,6 +42,7 @@ const DriverSingle = () => {
             'x-rapidapi-host': 'api-formula-1.p.rapidapi.com'
           }
         })
+        console.log('image response', response)
         setImages(response.data.response[0].image)
       } catch (errors) {
         console.log(errors)
