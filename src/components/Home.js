@@ -44,7 +44,6 @@ const Home = () => {
     const getData = async () => {
       try {
         const { data } = await axios.get('https://ergast.com/api/f1/current.json')
-        console.log("RACES", races)
         setRaces(data.MRData.RaceTable.Races)
         getRace(data.MRData.RaceTable.Races)
       } catch (error) {
