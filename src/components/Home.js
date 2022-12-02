@@ -44,6 +44,7 @@ const Home = () => {
     const getData = async () => {
       try {
         const { data } = await axios.get('https://ergast.com/api/f1/current.json')
+        console.log("RACES", races)
         setRaces(data.MRData.RaceTable.Races)
         getRace(data.MRData.RaceTable.Races)
       } catch (error) {
@@ -58,7 +59,7 @@ const Home = () => {
   return (
     <main className='home-container'>
       <div className="next-race-container text-center ">
-        {races.length > 0 && nextRaceDisplay()}
+        {currentRace.round < races.length && nextRaceDisplay()}
       </div>
       <div className="standings-container mb-3">
         <div className="standings-text-wrapper text-center">
