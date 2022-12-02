@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.37746a56.css",
-    "main.js": "/static/js/main.ec033c6c.js",
+    "main.js": "/static/js/main.d43a541e.js",
     "static/media/background3.jpg": "/static/media/background3.05ba015f813205bb0a05.jpg",
     "static/media/background.jpg": "/static/media/background.6c175a8b579dc0fcf061.jpg",
     "static/media/Australian-Grand-Prix.png": "/static/media/Australian-Grand-Prix.782d13e0c97ca8c478ad.png",
@@ -59,10 +59,10 @@
     "static/media/Qatar-Grand-Prix.png": "/static/media/Qatar-Grand-Prix.d70186bad988809a6197.png",
     "index.html": "/index.html",
     "main.37746a56.css.map": "/static/css/main.37746a56.css.map",
-    "main.ec033c6c.js.map": "/static/js/main.ec033c6c.js.map"
+    "main.d43a541e.js.map": "/static/js/main.d43a541e.js.map"
   },
   "entrypoints": [
     "static/css/main.37746a56.css",
-    "static/js/main.ec033c6c.js"
+    "static/js/main.d43a541e.js"
   ]
 }
